@@ -1,11 +1,27 @@
 # depslib dependency file v1.0
-1448145878 source:/home/habib/Documents/Programming/TubesASD/KorbanAsap.cpp
+1448148892 source:/home/habib/Documents/Programming/TubesASD/KorbanAsap.cpp
 	<iostream>
 	"KorbanAsap.hpp"
 
-1448147229 /home/habib/Documents/Programming/TubesASD/KorbanAsap.hpp
+1448149033 /home/habib/Documents/Programming/TubesASD/KorbanAsap.hpp
 
-1448145862 source:/home/habib/Documents/Programming/TubesASD/main.cpp
+1448149317 source:/home/habib/Documents/Programming/TubesASD/main.cpp
+	<iostream>
+	"KorbanAsap.hpp"
+
+1448148965 source:/home/habib/Documents/Programming/TubesASD/Habib.cpp
+	<iostream>
+	"KorbanAsap.hpp"
+
+1448149223 source:/home/habib/Documents/Programming/TubesASD/Ilham.cpp
+	<iostream>
+	"KorbanAsap.hpp"
+
+1448149433 source:/home/habib/Documents/Programming/TubesASD/Adrian.cpp
+	<iostream>
+	"KorbanAsap.hpp"
+
+1448149526 source:/home/habib/Documents/Programming/TubesASD/Denni.cpp
 	<iostream>
 	"KorbanAsap.hpp"
 

@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Adrian.cpp" />
+		<Unit filename="Habib.cpp" />
+		<Unit filename="Ilham.cpp" />
+		<Unit filename="KorbanAsap.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

@@ -1,6 +1,15 @@
 #ifndef KORBANASAP_HPP_INCLUDED
 #define KORBANASAP_HPP_INCLUDED
 
+#define Nil NULL
+#define firstK(korban) korban.firstK
+#define infoK(keluarga) keluarga->infoK
+#define firstA(keluarga) keluarga->firstA
+#define nextK(keluarga) keluarga->nextK
+#define infoA(anggota) anggota->infoA
+#define prevA(anggota) anggota->prevA
+#define nextA(anggota) anggota->nextA
+
 using namespace std;
 
 typedef struct ElmKeluarga *AdrK;
@@ -22,21 +31,21 @@ struct InfoA {
 
 struct ElmKeluarga {
     InfoK infoK;
-    AdrA firstAnggota;
-    AdrK nextKeluarga;
+    AdrA firstA;
+    AdrK nextK;
 };
 
 struct ElmAnggota {
     InfoA infoA;
-    AdrA prevAnggota;
-    AdrA nextAnggota;
+    AdrA prevA;
+    AdrA nextA;
 };
 
 struct Korban {
-    AdrK firstKeluarga;
+    AdrK firstK;
 };
 
-void createKorban(Korban k);
+void createKorban(Korban &korban);
 AdrK alokasiKeluarga(InfoK data);
 AdrA alokasiAnggota(InfoA data);
 
@@ -55,6 +64,10 @@ void insertAfterAnggota(AdrK keluarga, AdrA anggota, AdrA data);
 void deleteAfterKorban(Korban &korban, AdrK keluarga);
 void deleteAfterAnggota(AdrK keluarga, AdrA anggota);
 
+void insertKeluarga(Korban &korban, AdrK keluarga);
+void insertAnggota(AdrK keluarga, AdrA korban);
+
 void hello();
+void coba();
 
 #endif // KORBANASAP_HPP_INCLUDED
