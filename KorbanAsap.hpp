@@ -45,6 +45,8 @@ struct Korban {
     AdrK firstK;
 };
 
+Korban korban;
+
 void createKorban(Korban &korban);
 AdrK alokasiKeluarga(InfoK data);
 AdrA alokasiAnggota(InfoA data);
@@ -64,8 +66,22 @@ void insertAfterAnggota(AdrK keluarga, AdrA anggota, AdrA data);
 void deleteAfterKorban(Korban &korban, AdrK keluarga);
 void deleteAfterAnggota(AdrK keluarga, AdrA anggota);
 
-void insertKeluarga(Korban &korban, AdrK keluarga);
-void insertAnggota(AdrK keluarga, AdrA korban);
+void insertKeluarga(Korban &korban, AdrK data);
+void insertAnggota(AdrK keluarga, AdrA data);
+
+void hapusKeluarga(Korban &korban);
+void hapusAnggota(AdrK keluarga);
+
+void menuUtama();
+void menuInsertKeluarga();
+void menuInsertAnggota();
+void menuTampilKorban();
+void menuCariKeluarga();
+void menuCariAnggota();
+void menuEditKeluarga();
+void menuEditAnggota();
+void menuHapusKeluarga();
+void menuHapusAnggota();
 
 void hello();
 void coba();
